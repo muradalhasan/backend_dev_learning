@@ -1,0 +1,13 @@
+.box{
+    width: 800px;
+    height: 800px;
+    margin: 0 auto;
+    border: 3px solid orange;
+    background-image: url(cat_img.jpg),url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb-NGEQDekk2BwsllLjk4tcIM_BPIzXECdsg&s);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    /* background-position: 200px 200px; */
+    background-position: center center;
+    /* background-attachment */
+    background-attachment: fixed,scroll;
+}

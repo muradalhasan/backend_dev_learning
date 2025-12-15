@@ -1,0 +1,69 @@
+h1{
+    color: red;
+}
+
+// why scss
+// feature-->variables
+
+$primary-color: tomato;
+$font-size:24px;
+$bg-color:gray;
+$font-color: #fff;
+
+// implementation
+
+h1{
+    background-color: $primary-color;
+    color: $font-color;
+}
+// designing mixin
+@mixin manuDesign(){
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap:10px;
+}
+
+// menu design
+// scss nesting feature
+.menu{
+    @include manuDesign();
+    .menu__item{
+        padding: 15px 30px;
+
+    }
+    .menu__link{
+        background-color: $primary-color;
+        color: $font-color;
+        text-decoration: none;
+    }
+    .menu__link:hover{
+        background-color: orange;
+    }
+}
+
+// implementing scss function in footer manu
+
+.footer-menu{
+    @include manuDesign();
+}
+
+// scss inheritance
+%btn{
+    padding: 15px 30px;
+    text-decoration: none;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+.google{
+    @extend %btn;
+    background-color: tomato;
+    color: #fff;
+}
+.yahoo{
+ @extend %btn;
+ background-color: teal;
+ color: #fff;
+}

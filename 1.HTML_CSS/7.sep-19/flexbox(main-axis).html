@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        main{
+            width: 1000px;
+            height: 1000px;
+            border: 5px solid orange;
+            margin: 0 auto;
+            font-size: 50px;
+            color: #fff;
+            display: flex; 
+            /* to work with cross axis we use align items */
+            /* align-items: stretch;
+            /* this is default value. this means though we have a min-heght property because of stretch property taina boro kore pura div vorai felche */
+            /* align-items: flex-start; */
+            /* align-items: center; */
+            /* align-items: flex-end; */
+            /* to make a item perfactly centered use */
+            /* justify-content:center */
+            /* align-items:center */
+
+
+            /* flex-wrap: nowrap; */
+            /* flex-direction: row-reverse; */
+
+
+            /* flex-direction: column; now cross axis is working as main axis and vice-versa */
+            flex-direction: column-reverse;
+            /* now main axis is starting reversely from cross axis */
+
+        }
+        div:nth-of-type(1){
+            width: 300px;
+            min-height: 200px;
+            background-color: tomato;
+        }
+        div:nth-of-type(2){
+            width: 300px;
+            min-height: 300px;
+            background-color: teal;
+            /* align-self: self-start; */
+        }
+        div:nth-of-type(3){
+            width: 400px;
+            min-height: 300px;
+            background-color: gray;
+        }
+        div:nth-of-type(4){
+            width: 350px;
+            min-height: 250px;
+            background-color: slateblue;
+        }
+        div:nth-of-type(5){
+            width: 300px;
+            min-height: 300px;
+            background-color: orangered;
+        }
+        section{
+            width: 300px;
+            height: 200px;
+            background-color: green;
+        }
+        .circle{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+
+        }
+
+    </style>
+</head>
+<body>
+    <!-- main axis(x-axis) and cross axis(y-axis) -->
+     <main>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+     </main>
+     
+</body>
+</html>

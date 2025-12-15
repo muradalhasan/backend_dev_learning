@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p:nth-of-type(1){
+            background-color: tomato;
+            color: #fff;
+        }
+        p:nth-of-type(2){
+            background-color: teal;
+            color: #fff;
+        }
+        p:nth-of-type(3){
+            background-color: orange;
+            color: #fff;
+        }
+        @media screen and (min-width: 550px){
+            p:nth-of-type(3){
+                display: none;
+            }
+            .parent{
+                display: flex;
+            }
+            .parent > *{
+                flex: 1;
+            }
+        
+        }
+        @media screen and (min-width: 700px){
+            p:nth-of-type(3){
+                display: block;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolorem vel repellat. Praesentium provident autem repellat earum id voluptas sed odit, maxime repudiandae corrupti magnam numquam possimus quia nemo ab, optio voluptatem eaque dicta soluta est, error reprehenderit blanditiis beatae. Quae aliquid nam soluta, dignissimos totam velit molestiae eius obcaecati distinctio, debitis quis vitae nisi dolor quidem in voluptate doloremque dicta sapiente tempore autem odit! Quasi eos non ut explicabo. Molestiae quas dicta perferendis, debitis nesciunt beatae alias tempore praesentium laboriosam error assumenda eos ex eius. Nam vel, consectetur repellendus voluptatem impedit itaque corporis dolorum perspiciatis veniam quos iure perferendis?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus officia eligendi aspernatur nobis expedita et enim consequuntur omnis, temporibus culpa earum nihil nesciunt atque dolorum vitae amet doloribus corrupti impedit obcaecati id animi modi? Deleniti, laborum! Officiis culpa inventore delectus. Neque dolore laborum perspiciatis sunt omnis harum odit doloremque facere?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam dolor iste, animi inventore accusamus vel quasi. Libero cumque officia cum, obcaecati numquam nam voluptatibus, labore dicta non quod quisquam placeat.</p>
+    </div>
+    
+</body>
+</html>

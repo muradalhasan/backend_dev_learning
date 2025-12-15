@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS positioning</title>
+    
+        <!--
+        1.absolute position
+        2.relative position
+        3.fixed position
+        4.relative +absolute postion
+        5.stiky position
+          -->
+        <style>
+            /* ctrl+shift+L */
+            /* ctrl +x Select All Occurrences of Find Match */
+            div{
+                height: 300px;
+                width: 300px;
+                font-size: 2rem;
+                color: #fff;
+            }
+            .box1{
+                background-color: tomato;
+                position: absolute;
+                /* here breaking normal document flow */
+                /* so naturally 2 is taking place of box 1 */
+
+                /* position absolute deowar por elta question kore. */
+                /* amr kono relative position ache ki?? 
+                1.yes
+                2.No(in this situation no)
+                */
+                /* if ans is no...initial containing block er sapekkhe sorbe */
+                /* if yes parent er sapekkhe sorbe */
+
+            }
+            .box2{
+                background-color: yellowgreen;
+                width: 400px;
+                height: 400px;
+            }
+            .box3{
+                background-color: palevioletred;
+            }
+        </style>
+      
+</head>
+<body>
+    <!-- <h1>Hello There</h1>
+    <p>Paragraph 1</p> -->
+    <!-- normal document flow -->
+     <!-- to break normal document flow we use positioning -->
+    <div class="box1"><h1>1</h1></div>
+    <div class="box2"><h2>2</h2></div>
+    <div class="box3"><h3>3</h3></div>
+</body>
+</html>

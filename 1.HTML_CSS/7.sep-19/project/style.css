@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+   
+}
+body{
+    background-color: #000;
+}
+.nav-section{
+    background-image: url(photos/Background.png);
+    background-size: cover;
+    padding: 20px 0;
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+.left-logo-section img{
+    margin-left: auto;
+}
+.right-nav-section ul{
+    display: flex;
+    list-style-type: none;
+}
+.right-nav-section ul li{
+    margin-left: 30px;
+}
+.right-nav-section ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+.right-nav-section ul li a:hover {
+    color: #e63946;
+}
+.content {
+    text-align: left;
+    margin-top: 50px;
+    position: relative;
+    margin-bottom: 0;
+}
+.content h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+.buttons {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+}
+button {
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+.service-btn {
+    background-color: #e63946;
+    color: #fff;
+}
+
+.service-btn:hover {
+    background-color: #d62839;
+}
+
+.consult-btn {
+    background-color: #1d3557;
+    color: #fff;
+}
+
+.consult-btn:hover {
+    background-color: #457b9d;
+}
+
+/* @media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .right-nav-section ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .content h1 {
+        font-size: 30px;
+    }
+    
+    .buttons {
+        flex-direction: column;
+    }
+} */
+/* css for hero section starts */
+.hero-section {
+    padding: 50px;
+     background-color: #001829;
+     width: 100%;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    /* margin: 0 auto; */
+    width: 100%;
+
+}
+.heroa{
+    display: flex;
+    /* width: 100%; */
+}
+.herob{
+    display: flex;
+    /* width: 100%; */
+}
+
+.hero1{
+    border: 5px solid orange;
+    border-radius: 3px ;
+}
+
+
+
+/* css for favorite section starts here */
+.favorite-section{
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+.favorite{
+    background-color: #FBFBFB;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+}
+.title-part{
+    display: flex;
+    justify-content: space-between;
+}
+.title-part h4{
+    margin: 20px 20px 0px 20px;
+}
+.fav-review-section{
+    display: flex;
+    justify-content: space-between;
+}
+.review-text{
+    margin-top: 20px;
+}
+.social-links{
+    display: flex;
+    margin-top: 40px;
+    margin: 80px 20px 80px 20px;
+    padding: 40px;
+    background-color: #f8efe0;
+    
+
+}
+.social-links-desc{
+    padding: 20px;
+}
+
+/* css for about section starts here */
+.about-section{
+    background-color: #d62839;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px; 
+    padding: 50px 50px 40px 50px;
+
+}
+.text-buttom{
+    position: relative;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+.text-buttom p{
+    margin-top: 30px;
+}
+.about-btn{
+    margin-top: 80px;
+}
+.about-btn1{
+    background-color: #fff;
+    color: black;
+}
+.about-btn2{
+    background-color: tomato;
+    color: #fff;
+}
+.advantage-section{
+    display: flex;
+    margin-top: 100px;
+   
+}
+.adva{
+   flex: 1;
+}
+.advb{
+    flex: 1;
+}

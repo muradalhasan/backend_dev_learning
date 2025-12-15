@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        main{
+            width: 1000px;
+            height: 1000px;
+            border: 5px solid orange;
+            margin: 0 auto;
+            font-size: 50px;
+            color: #fff;
+            display: flex; 
+            
+            /* main axis(x-axis) borabor context set korte caile justifu-content use korte hbe*/
+            justify-content: center;
+            /* center means duita div majhe thakbe */
+            /* justify-content: center/flex-start/flex-end etc.. */
+            /* justify-content: space-around; */
+        }
+        div:nth-of-type(1){
+            width: 300px;
+            min-height: 200px;
+            background-color: tomato;
+            order: 5;
+
+        }
+        div:nth-of-type(2){
+            width: 300px;
+            min-height: 300px;
+            background-color: teal;
+            order: 2;
+        }
+        div:nth-of-type(3){
+            width: 400px;
+            min-height: 300px;
+            background-color: gray;
+            order: 1;
+        }
+        div:nth-of-type(4){
+            width: 350px;
+            min-height: 250px;
+            background-color: slateblue;
+            order: 4;
+        }
+        div:nth-of-type(5){
+            width: 300px;
+            min-height: 300px;
+            background-color: orangered;
+            order: 3;
+        }
+    </style>
+</head>
+<body>
+    <!-- main axis(x-axis) and cross axis(y-axis) -->
+     <main>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+     </main>
+</body>
+</html>

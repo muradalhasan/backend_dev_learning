@@ -1,0 +1,53 @@
+h1 {
+  color: red;
+}
+
+h1 {
+  background-color: tomato;
+  color: #fff;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+.menu .menu__item {
+  padding: 15px 30px;
+}
+.menu .menu__link {
+  background-color: tomato;
+  color: #fff;
+  text-decoration: none;
+}
+.menu .menu__link:hover {
+  background-color: orange;
+}
+
+.footer-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.yahoo, .google {
+  padding: 15px 30px;
+  text-decoration: none;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+.google {
+  background-color: tomato;
+  color: #fff;
+}
+
+.yahoo {
+  background-color: teal;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 300px;
+            height: 300px;
+            background-color: tomato;
+            padding: 20px;
+            border: 2px solid black;
+            margin: 20px;
+            box-sizing: content-box ; 
+            /* content-box default border-box means wont exit width and height size */
+
+        }
+        .box2{
+            width: 300px;
+            height: 300px;
+            /* in inline element margin top and margin bottom wont work */
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum in voluptatum eaque nesciunt distinctio deleniti omnis. Suscipit dicta incidunt sapiente.</div>
+    <div class="box2"></div>
+</body>
+</html>

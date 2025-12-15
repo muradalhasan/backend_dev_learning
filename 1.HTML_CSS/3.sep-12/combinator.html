@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS combinator</title>
+    <!-- there  are four types of combinator
+      -->
+    <!-- 
+      1.decendent selector (space)
+      2.child selector (space+teg name)
+      3.adjacent selector
+      4.general sibling selector
+
+       -->
+      <style>
+        ul li{
+            /* decendent selector */
+        }
+        ul h1{
+            color: antiquewhite;
+        }
+        ul >li {
+            color: red;
+        }
+        /* div{
+            color: yellow;
+        }
+        div > h1{
+            color: orange;
+        } */
+         h1 +p{
+            color: yellowgreen;
+            /* + select only single element selects only para 1 */
+
+         }
+
+        h1 ~ p{
+            /* select all sibling */
+            color: brown;
+        }
+      </style>
+</head>
+<body>
+    <ul>
+        <li>item one</li>
+        <li>item one</li>
+
+        <li>item one</li>
+        <li>item one</li>
+        <h1>Hello World</h1>
+     
+    </ul>
+    <div>
+        <h1>Hello there!!</h1>
+        <section>
+            <h1>Hello Jupyter!!</h1>
+        </section>
+    </div>
+    <div class="adjucent-selctor">
+        <h1>Hello murad</h1>
+        <p>Para 1</p>
+        <p>Para 2</p>
+        <section>
+            <h1>Hello mohoshin</h1>
+            <span>Span 1</span>
+            <p>Para 3</p>
+        </section>
+    </div>
+</body>
+</html>
