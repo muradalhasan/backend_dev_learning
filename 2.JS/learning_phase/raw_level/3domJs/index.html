@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="content">
+        <h1 id="heading">
+            Wellcome to myschool cares
+        </h1>
+        <p class="text">
+            dom class
+        </p>
+        <p class="txt">Lorem ipsum dolor sit amet.</p>
+        <p class="text">Lorem, ipsum dolor.</p>
+
+    </section>
+    <script>
+        const h1=document.getElementById("heading")
+        // console.log(h1.innerHTML);
+        // h1.innerHTML="Hello from anther universe"
+
+        // inserting dom into a section append and prepend
+        const h2=document.createElement("h2")
+        h2.innerHTML = "hello from myschool care team once again"
+        const contentSection= document.getElementById("content")
+        contentSection.appendChild(h2)
+    </script>
+</body>
+</html>
