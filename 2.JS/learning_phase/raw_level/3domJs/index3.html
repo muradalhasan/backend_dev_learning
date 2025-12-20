@@ -10,31 +10,24 @@
         <h1 id="heading">
             Wellcome to myschool cares
         </h1>
-        <p class="text">
+        <p class="bold">
             dom class
         </p>
-        <p class="txt">Lorem ipsum dolor sit amet.</p>
-        <p class="text">Lorem, ipsum dolor.</p>
+        <p class="text">Lorem ipsum dolor sit amet.</p>
+        <p class="bold">Lorem, ipsum dolor.</p>
         <p id="footer">Copyright</p>
         <div>hello world</div>
         <button id="click">click to modify</button>
 
     </section>
     <script>
-        // getting html container through tag
-        // const paragraph=document.getElementsByTagName('p')
-        // console.log(paragraph);
-        // // this para var takes all paragraph as a array we can acces those using index
-        // console.log(paragraph[0])
         const button=document.getElementById('click')
         button.addEventListener('click',function(){
-            const paragraph=document.getElementById('p');
-            for(let i=0;i < paragraph.length ; i++){
-                paragraph[i].innerHTML= "<strong>"+paragraph[i].innerHTML+ "<strong>";
+            const peranai =document.getElementsByClassName('bold');
+            for (let i=0 ; i < peranai.length;i++){
+                peranai[i].innerHTML=`<strong> ${peranai[i].innerHTML} <strong>`;
             }
         })
-        
-        
     </script>
 </body>
 </html>

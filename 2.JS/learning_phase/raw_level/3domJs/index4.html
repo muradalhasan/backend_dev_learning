@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="click" style="background-color: skyblue;height: 220px;width: 220px;">
+        <!-- div#click -->
+    </div>
+    <script>
+        const random1=Math.random()*255
+        const random2=Math.random()*255
+        const random3=Math.random()*255
+        const div=document.getElementById('click')
+        
+        div.addEventListener('mouseenter',function(){
+            console.log("entred");
+        })
+        div.addEventListener('mouseleave',function(){
+            console.log("left");
+            
+        })
+        div.addEventListener('click',function(){
+            // div.style.backgroundColor="orange";
+            div.style.backgroundColor=`rgb(${random1},${random2},${random3})`;
+
+        })
+
+    </script>
+</body>
+</html>
