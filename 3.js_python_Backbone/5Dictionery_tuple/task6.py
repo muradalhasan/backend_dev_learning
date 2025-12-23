@@ -1,0 +1,5 @@
+tup=('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h')
+temp=list(tup)
+temp=temp.reverse()
+tup1=tuple(temp)
+print(tup1)
